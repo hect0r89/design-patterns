@@ -1,5 +1,9 @@
 
-# Single Responsibility Principle
+"""Single Responsibility Principle
+    El principio de responsabilidad única o SRP (siglas del inglés (Single Responsibility Principle) en ingeniería de
+    software establece que cada módulo o clase debe tener responsabilidad sobre una sola parte de la funcionalidad
+    proporcionada por el software y esta responsabilidad debe estar encapsulada en su totalidad por la clase.
+    Todos sus servicios deben estar estrechamente alineados con esa responsabilidad. """
 
 class Journal:
     def __init__(self):
@@ -30,7 +34,7 @@ class Journal:
 
 
 class PersistenceManager:
-    def save_to_file(journal, filename):
+    def save_to_file(self, journal, filename):
         file = open(filename, "w")
         file.write(str(journal))
         file.close()

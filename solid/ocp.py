@@ -1,6 +1,11 @@
 from enum import Enum
 
-# Open-Closed Principle
+"""Open-Closed Principle
+        Dentro de la programación orientada a objetos, el principio de abierto/cerrado u OCP (siglas del inglés 
+        Open/Closed Principle) establece que «una entidad de software (clase, módulo, función, etc.) debe quedarse 
+        abierta para su extensión, pero cerrada para su modificación». Es decir, se debe poder extender el 
+        comportamiento de tal entidad pero sin modificar su código fuente."""
+
 #SPECIFICATION pattern
 
 class Color(Enum):

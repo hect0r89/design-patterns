@@ -1,5 +1,8 @@
 
-# Liskov Substitution Principle
+"""Liskov Substitution Principle
+        Principio de sustitución de Liskov o LSP (Liskov Substitution Principle) es un principio de la programación
+        orientada a objetos. y puede definirse como: Cada clase que hereda de otra puede usarse como su padre sin
+        necesidad de conocer las diferencias entre ellas."""
 
 class Rectangle:
     def __init__(self, width, height):
@@ -36,11 +39,11 @@ class Square(Rectangle):
 
     @Rectangle.width.setter
     def width(self, value):
-        _width = _height = value
+        self._width = self._height = value
 
     @Rectangle.height.setter
     def height(self, value):
-        _width = _height = value
+        self._width = self._height = value
 
 
 def use_it(rc):

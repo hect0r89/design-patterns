@@ -6,7 +6,10 @@ co-founder Ron Jeffries has written: "Always implement things when you actually 
 never when you just foresee that you need them."[5] Other forms of the phrase include 
 "You aren't going to need it"[6][7] and "You ain't gonna need it".[8]"""
 
-# Interface Segregation Principle
+"""Interface Segregation Principle
+        El principio de segregación de la interfaz (ISP, por sus siglas del inglés «Interface Segregation Principle») 
+        establece que los clientes de un programa dado sólo deberían conocer de éste aquellos métodos que realmente 
+        usan, y no aquellos que no necesitan usar."""
 
 class Machine:
     def print(self, document):
